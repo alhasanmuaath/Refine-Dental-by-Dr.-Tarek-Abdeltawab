@@ -1,0 +1,273 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Refine Dental</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* Layout: calm split hero (headline + real treatment-room photo), quiet single-column sections, one oak accent on slate. */
+:root{
+  --bg:#F2F5F3; --surface:#FFFFFF; --ink:#18242A; --muted:#55666D; --line:#D8E0DC;
+  --slate:#3C515B; --oak:#9A6A3F; --oak-ink:#FFFFFF; --sage:#DFE9E4; --wa:#1E7B4F;
+  --font-display:"Instrument Serif","IBM Plex Sans Arabic",Georgia,serif;
+  --font-body:"Manrope","IBM Plex Sans Arabic",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#12191C; --surface:#1A2428; --ink:#EAF0EE; --muted:#9FB0B6; --line:#2B3A40;
+  --slate:#A9C0CA; --oak:#D0A074; --oak-ink:#1A1410; --sage:#1F2D31; --wa:#49B27F; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#12191C; --surface:#1A2428; --ink:#EAF0EE; --muted:#9FB0B6; --line:#2B3A40;
+  --slate:#A9C0CA; --oak:#D0A074; --oak-ink:#1A1410; --sage:#1F2D31; --wa:#49B27F; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.65 var(--font-body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  padding-block:0 84px}
+html[lang="ar"] .en,html[lang="en"] .ar{display:none!important}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--oak);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1120px;margin-inline:auto}
+h1,h2,h3{font-family:var(--font-display);font-weight:400;line-height:1.08;text-wrap:balance;margin:0}
+html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] h3{font-family:var(--font-body);font-weight:600;line-height:1.3}
+.label{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
+html[lang="ar"] .label{letter-spacing:0;text-transform:none;font-size:13px}
+
+header.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:18px;flex-wrap:wrap}
+.mark{font-family:var(--font-display);font-size:28px;line-height:1;text-decoration:none}
+.mark small{display:block;font-family:var(--font-body);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+.tools{display:flex;gap:8px;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 22px;border-radius:999px;
+  font:600 15px var(--font-body);text-decoration:none;border:1.5px solid transparent;cursor:pointer}
+.btn.primary{background:var(--wa);color:#fff}
+.btn.ghost{border-color:var(--line);background:var(--surface);color:var(--ink)}
+.btn.sm{min-height:40px;padding:0 16px;font-size:14px}
+html[data-theme="dark"] .btn.primary{color:#0B1A12}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn.primary{color:#0B1A12}}
+
+.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(24px,5vw,64px);align-items:center;padding-block:clamp(20px,4vw,56px) clamp(40px,6vw,80px)}
+.hero h1{font-size:clamp(40px,6.4vw,76px);margin-block:14px 18px}
+.hero p.lead{font-size:18px;color:var(--muted);max-width:46ch;margin:0 0 26px}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap}
+.rating{display:flex;align-items:center;gap:10px;margin-top:26px;font-size:14px;color:var(--muted)}
+.rating b{font-family:var(--font-display);font-size:30px;font-weight:400;color:var(--ink);line-height:1}
+.stars{color:var(--oak);letter-spacing:2px;font-size:15px}
+.shot{margin:0;border-radius:6px;overflow:hidden;border:1px solid var(--line);background:var(--sage)}
+.shot img{display:block;width:100%;height:100%;object-fit:cover}
+.hero .shot{aspect-ratio:4/4.3;max-width:100%}
+
+section{padding-block:clamp(36px,6vw,72px);border-top:1px solid var(--line)}
+section>.wrap>h2{font-size:clamp(30px,4.2vw,48px);margin-block:10px 28px}
+
+.proof{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.proof div{padding:6px 20px;border-inline-start:1px solid var(--line)}
+.proof div:first-child{border-inline-start:0;padding-inline-start:0}
+.proof strong{display:block;font:400 clamp(26px,3.4vw,38px)/1.1 var(--font-display)}
+html[lang="ar"] .proof strong{font-family:var(--font-body);font-weight:600;font-size:clamp(20px,2.6vw,28px)}
+.proof span{font-size:14px;color:var(--muted)}
+
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.svc{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:24px;min-width:0}
+.svc h3{font-size:26px;margin-bottom:10px}
+html[lang="ar"] .svc h3{font-size:20px}
+.svc p{margin:0;color:var(--muted);font-size:15px}
+
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,64px);align-items:center}
+.split.flip .shot{order:2}
+.split .shot{aspect-ratio:3/4;max-width:420px;width:100%;justify-self:center}
+.split p{color:var(--muted);max-width:52ch;margin:0 0 14px}
+.doc{display:flex;gap:20px;align-items:flex-start}
+.doc .shot{width:132px;flex:none;aspect-ratio:3/4;border-radius:6px}
+.doc .shot img{object-position:50% 20%}
+.doc blockquote{margin:0}
+
+.reviews{display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+.rv{grid-column:span 2;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:24px;margin:0;display:flex;flex-direction:column;gap:14px;min-width:0}
+.rv.big{grid-column:span 4;background:var(--slate);border-color:var(--slate)}
+.rv.big q{color:var(--bg);font-size:clamp(24px,3vw,34px)}
+.rv.big figcaption{color:var(--bg);opacity:.8}
+.rv q{quotes:"\201C" "\201D";font:400 21px/1.35 var(--font-display)}
+html[lang="ar"] .rv q{font-family:var(--font-body)}
+.rv figcaption{font-size:13px;color:var(--muted);margin-top:auto}
+.note{font-size:13px;color:var(--muted);margin-top:18px}
+
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,64px)}
+.visit .shot{aspect-ratio:3/2;margin-bottom:20px}
+dl{margin:0;display:grid;gap:18px}
+dt{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
+html[lang="ar"] dt{letter-spacing:0;text-transform:none;font-size:13px}
+dd{margin:4px 0 0}
+.num{font-weight:700;font-size:20px;direction:ltr;unicode-bidi:isolate;display:inline-block;user-select:all}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 0;padding:0;list-style:none}
+.chips li{background:var(--sage);border-radius:999px;padding:4px 14px;font-size:14px}
+
+.final{text-align:center}
+.final h2{margin-inline:auto;max-width:18ch}
+.final .cta-row{justify-content:center}
+footer{border-top:1px solid var(--line);padding-block:24px 40px;font-size:13px;color:var(--muted);display:flex;gap:12px;justify-content:space-between;flex-wrap:wrap}
+
+.bar{position:fixed;inset-inline:0;bottom:0;display:none;gap:10px;background:var(--surface);border-top:1px solid var(--line);
+  padding:10px max(16px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));z-index:10}
+.bar .btn{flex:1}
+
+@media (max-width:900px){
+  .hero,.split,.visit{grid-template-columns:1fr}
+  .split.flip .shot{order:0}
+  .services{grid-template-columns:1fr 1fr}
+  .proof{grid-template-columns:1fr 1fr;gap:20px 0}
+  .proof div:nth-child(3){border-inline-start:0;padding-inline-start:0}
+  .reviews{grid-template-columns:1fr}.rv,.rv.big{grid-column:auto}
+  .hero .shot{aspect-ratio:4/3}
+  .bar{display:flex}
+}
+@media (max-width:520px){.services{grid-template-columns:1fr}.doc{flex-direction:column}.top .btn.primary{display:none}}
+@media (prefers-reduced-motion:no-preference){.btn{transition:transform .15s}.btn:hover{transform:translateY(-1px)}}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <a class="mark" href="#top" id="top">Refine Dental<small><span class="en">by Dr. Tarek Abdeltawab</span><span class="ar">بإشراف د. طارق عبدالتواب</span></small></a>
+    <div class="tools">
+      <button class="btn ghost sm" id="lang" type="button" aria-label="Switch language"><span class="en">العربية</span><span class="ar">English</span></button>
+      <a class="btn primary sm" href="https://wa.me/201508264492" target="_blank" rel="noopener"><span class="en">Book on WhatsApp</span><span class="ar">احجز عبر واتساب</span></a>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div>
+        <span class="label"><span class="en">Dental clinic · Sheikh Zayed, Giza</span><span class="ar">عيادة أسنان · الشيخ زايد، الجيزة</span></span>
+        <h1><span class="en">Careful dentistry, in a calm room.</span><span class="ar">طب أسنان بعناية، في مكان هادئ.</span></h1>
+        <p class="lead"><span class="en">Gentle treatment, clear explanations before every step, and a clinic patients describe as spotless.</span><span class="ar">علاج هادئ، وشرح واضح قبل كل خطوة، وعيادة يصفها مرضاها بأنها نظيفة جداً.</span></p>
+        <div class="cta-row">
+          <a class="btn primary" id="wa1" href="https://wa.me/201508264492" target="_blank" rel="noopener"><span class="en">Book on WhatsApp</span><span class="ar">احجز عبر واتساب</span></a>
+          <a class="btn ghost" href="tel:+201508264492"><span class="en">Call</span><span class="ar">اتصل</span>&nbsp;<span class="num" style="font-size:15px">01508264492</span></a>
+        </div>
+        <div class="rating"><b>5.0</b><span class="stars" aria-hidden="true">★★★★★</span><span><span class="en">54 Google reviews</span><span class="ar">54 تقييماً على خرائط جوجل</span></span></div>
+      </div>
+      <figure class="shot"><img src="img/room.jpg" alt="A treatment room at Refine Dental with a dental chair beside tall windows and a wooden slat wall" width="408" height="306"></figure>
+    </div>
+
+    <section>
+      <div class="wrap">
+        <span class="label"><span class="en">What patients mention most</span><span class="ar">أكثر ما يذكره المرضى</span></span>
+        <div class="proof" style="margin-top:20px">
+          <div><strong><span class="en">Excellent doctor</span><span class="ar">طبيب ممتاز</span></strong><span><span class="en">in 10 reviews</span><span class="ar">في 10 تقييمات</span></span></div>
+          <div><strong><span class="en">Clinic cleanliness</span><span class="ar">نظافة العيادة</span></strong><span><span class="en">in 8 reviews</span><span class="ar">في 8 تقييمات</span></span></div>
+          <div><strong><span class="en">Painless procedure</span><span class="ar">إجراء بلا ألم</span></strong><span><span class="en">in 3 reviews</span><span class="ar">في 3 تقييمات</span></span></div>
+          <div><strong><span class="en">Punctuality</span><span class="ar">الالتزام بالمواعيد</span></strong><span><span class="en">in 3 reviews</span><span class="ar">في 3 تقييمات</span></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="wrap">
+        <span class="label"><span class="en">Treatments</span><span class="ar">العلاجات</span></span>
+        <h2><span class="en">What we treat, in plain terms.</span><span class="ar">ما نعالجه، بوضوح.</span></h2>
+        <div class="services">
+          <div class="svc"><h3><span class="en">Extractions and wisdom teeth</span><span class="ar">الخلع وجراحة ضرس العقل</span></h3><p><span class="en">Patients describe extractions they barely felt and wisdom tooth surgery that went smoothly.</span><span class="ar">يصف المرضى خلعاً لم يشعروا به تقريباً وجراحة ضرس عقل مرّت بسلاسة.</span></p></div>
+          <div class="svc"><h3><span class="en">Root canal treatment</span><span class="ar">علاج العصب</span></h3><p><span class="en">Guided by digital X-rays, so you can see what is being treated.</span><span class="ar">بالاستعانة بالأشعة الرقمية، لترى ما يتم علاجه.</span></p></div>
+          <div class="svc"><h3><span class="en">Restorations and finishing</span><span class="ar">الترميمات واللمسات النهائية</span></h3><p><span class="en">Precise work with attention to how the final result looks.</span><span class="ar">عمل دقيق مع اهتمام بالشكل النهائي.</span></p></div>
+          <div class="svc"><h3><span class="en">Children's dentistry</span><span class="ar">أسنان الأطفال</span></h3><p><span class="en">Parents praise his patience and respect when treating children.</span><span class="ar">يشيد الأهالي بصبره واحترامه في التعامل مع الأطفال.</span></p></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap split">
+        <figure class="shot"><img src="img/scan.jpg" alt="A 3D intraoral scan of upper and lower teeth shown on the clinic screen" width="381" height="677" loading="lazy"></figure>
+        <div>
+          <span class="label"><span class="en">Technology</span><span class="ar">التقنية</span></span>
+          <h2 style="font-size:clamp(30px,4.2vw,48px);margin-block:10px 18px"><span class="en">See your teeth before treatment starts.</span><span class="ar">شاهد أسنانك قبل بدء العلاج.</span></h2>
+          <p><span class="en">A 3D scan of your mouth and digital X-rays appear on screen, so each step is explained with your own images.</span><span class="ar">مسح ثلاثي الأبعاد للفم وأشعة رقمية تُعرض على الشاشة، فيُشرح كل إجراء على صورك أنت.</span></p>
+          <p><span class="en">Patients also note that the clinic keeps its equipment up to date and uses quality materials.</span><span class="ar">ويلاحظ المرضى أن العيادة تحدّث أجهزتها وتستخدم مواد عالية الجودة.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="doc">
+          <figure class="shot"><img src="img/doctor.jpg" alt="Dr. Tarek Abdeltawab in the clinic" width="160" height="116" loading="lazy"></figure>
+          <div>
+            <span class="label"><span class="en">Your dentist</span><span class="ar">طبيبك</span></span>
+            <h2 style="font-size:clamp(30px,4.2vw,48px);margin-block:10px 14px"><span class="en">Dr. Tarek Abdeltawab</span><span class="ar">د. طارق عبدالتواب</span></h2>
+            <blockquote><p style="color:var(--muted);max-width:56ch;margin:0"><span class="en">Reviewers call him patient, a good listener, and someone who explains almost everything before he begins.</span><span class="ar">يصفه المرضى بأنه صبور، وحسن الإصغاء، ويشرح تقريباً كل شيء قبل أن يبدأ.</span></p></blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews">
+      <div class="wrap">
+        <span class="label"><span class="en">Google reviews</span><span class="ar">تقييمات جوجل</span></span>
+        <h2><span class="en">In patients' own words.</span><span class="ar">بكلمات المرضى أنفسهم.</span></h2>
+        <div class="reviews">
+          <figure class="rv big"><q>You cured my dentist anxiety and my teeth.</q><figcaption>Shady Kamel · Google review</figcaption></figure>
+          <figure class="rv"><q>I had my tooth extracted and honestly, I didn't feel a thing. The clinic is very clean too.</q><figcaption>tassnim housam · Google review</figcaption></figure>
+          <figure class="rv"><q>The clinic is very clean and organized, and the place is comfortable and reassuring.</q><figcaption>Esraa Mostafa · Google review</figcaption></figure>
+          <figure class="rv"><q>Dr. Tarek always updates his clinic with new tech and uses only best materials.</q><figcaption>Ahmed Adel · Google review</figcaption></figure>
+          <figure class="rv"><q>He's a good listener, kind, and explains almost everything before he begins.</q><figcaption>Yousef Mahmoud Hashem · Google review</figcaption></figure>
+        </div>
+        <p class="note"><span class="en">Reviews are shown as published on Google Maps.</span><span class="ar">التقييمات معروضة كما نُشرت على خرائط جوجل (بالإنجليزية).</span></p>
+      </div>
+    </section>
+
+    <section id="visit">
+      <div class="wrap visit">
+        <div>
+          <span class="label"><span class="en">Visit</span><span class="ar">الزيارة</span></span>
+          <h2 style="font-size:clamp(30px,4.2vw,48px);margin-block:10px 20px"><span class="en">Find us in Kazan Plaza.</span><span class="ar">ستجدنا في كازان بلازا.</span></h2>
+          <figure class="shot"><img src="img/reception.jpg" alt="Refine Dental reception with the lit clinic sign on a wooden wall" width="435" height="290" loading="lazy"></figure>
+          <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Refine+Dental+by+Dr.+Tarek+Abdeltawab+Kazan+Plaza+Sheikh+Zayed" target="_blank" rel="noopener"><span class="en">Open in Google Maps</span><span class="ar">افتح في خرائط جوجل</span></a>
+        </div>
+        <dl>
+          <div><dt><span class="en">Address</span><span class="ar">العنوان</span></dt><dd><span class="en">Kazan Plaza, Building A1, Second Floor, Clinic 208, Al Shabab Rd, First 6th of October, Second Al Sheikh Zayed, Giza Governorate</span><span class="ar">كازان بلازا، مبنى A1، الدور الثاني، عيادة 208، طريق الشباب، الحي الأول، الشيخ زايد الثاني، محافظة الجيزة</span></dd></div>
+          <div><dt><span class="en">Phone and WhatsApp</span><span class="ar">الهاتف وواتساب</span></dt><dd><span class="num">01508264492</span></dd></div>
+          <div><dt><span class="en">Appointments</span><span class="ar">المواعيد</span></dt><dd><span class="en">Booking ahead is recommended. Message or call to choose a time.</span><span class="ar">يُفضَّل الحجز مسبقاً. راسلنا أو اتصل لاختيار الموعد.</span></dd></div>
+          <div><dt><span class="en">Payment</span><span class="ar">الدفع</span></dt><dd><ul class="chips"><li><span class="en">Credit cards</span><span class="ar">بطاقات ائتمان</span></li><li><span class="en">Debit cards</span><span class="ar">بطاقات خصم</span></li><li><span class="en">NFC mobile payments</span><span class="ar">الدفع عبر الهاتف NFC</span></li></ul></dd></div>
+          <div><dt><span class="en">Parking and access</span><span class="ar">الانتظار وسهولة الوصول</span></dt><dd><ul class="chips"><li><span class="en">Free parking lot</span><span class="ar">موقف مجاني</span></li><li><span class="en">Free street parking</span><span class="ar">انتظار مجاني على الطريق</span></li><li><span class="en">Wheelchair-accessible entrance</span><span class="ar">مدخل مهيأ للكراسي المتحركة</span></li><li><span class="en">Toilet</span><span class="ar">دورة مياه</span></li></ul></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="final">
+      <div class="wrap">
+        <h2><span class="en">Ready for a calmer dental visit?</span><span class="ar">جاهز لزيارة أسنان أكثر هدوءاً؟</span></h2>
+        <p style="color:var(--muted);margin:14px 0 24px"><span class="en">Send a message and we will help you choose a time.</span><span class="ar">أرسل رسالة وسنساعدك في اختيار الموعد.</span></p>
+        <div class="cta-row">
+          <a class="btn primary" id="wa2" href="https://wa.me/201508264492" target="_blank" rel="noopener"><span class="en">Book on WhatsApp</span><span class="ar">احجز عبر واتساب</span></a>
+          <a class="btn ghost" href="tel:+201508264492"><span class="en">Call</span><span class="ar">اتصل</span>&nbsp;<span class="num" style="font-size:15px">01508264492</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© Refine Dental by Dr. Tarek Abdeltawab</span><span><span class="en">Kazan Plaza, Sheikh Zayed, Giza</span><span class="ar">كازان بلازا، الشيخ زايد، الجيزة</span></span></footer>
+</div>
+
+<div class="bar">
+  <a class="btn primary" id="wa3" href="https://wa.me/201508264492" target="_blank" rel="noopener"><span class="en">WhatsApp</span><span class="ar">واتساب</span></a>
+  <a class="btn ghost" href="tel:+201508264492"><span class="en">Call</span><span class="ar">اتصل</span></a>
+</div>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  var msg={en:"Hello, I would like to book an appointment at Refine Dental.",ar:"مرحباً، أود حجز موعد في ريفاين دنتال."};
+  function apply(l){
+    root.lang=l; root.dir=(l==="ar")?"rtl":"ltr";
+    var u="https://wa.me/201508264492?text="+encodeURIComponent(msg[l]);
+    ["wa1","wa2","wa3"].forEach(function(id){var a=document.getElementById(id); if(a) a.href=u;});
+    document.querySelectorAll(".top .btn.primary").forEach(function(a){a.href=u;});
+  }
+  var start="en";
+  try{var s=localStorage.getItem("refine-lang"); if(s==="ar"||s==="en") start=s;}catch(e){}
+  apply(start);
+  document.getElementById("lang").addEventListener("click",function(){
+    var n=root.lang==="ar"?"en":"ar"; apply(n);
+    try{localStorage.setItem("refine-lang",n);}catch(e){}
+  });
+})();
+</script>
+
+</body></html>
